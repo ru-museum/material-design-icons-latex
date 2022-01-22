@@ -1,15 +1,16 @@
 material-design-icons-latex
 ==========
 
-Latex 用 Material Design Icons
+Material Design Icons for Latex.
 
 ## == 準備中です== 
 
-- Latex で **Material Design Icons 4.0.0** ( Google  ) を使用する為のライブラリーです。
+- Latex で **Material Design Icons(MDI) 4.0.0** ( Google  ) を使用する為のライブラリーです。
+- 著作権を考慮しアイコンの実体は同梱していませんので各自ダウンロードして下さい。
 
 ### 作成環境
 - LuaLatex  ( Debian：TexLive) 
-- Lualatex 及び BibLatex の導入方法、GEdit 及び VSCode による作業手順を Help.pdf に解説しています。
+- Lualatex 及び BibLatex の導入方法、GEdit 及び VSCode による作業手順を Help.pdf（準備中）に解説しています。
 
 ### 利用手順
 （１） [google /
@@ -36,10 +37,15 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 （６）ビルド
 　　Lualatex pproject.tex
 
+### エラー
+- MDI のアップデート等によりアイコンファイルの実体が存在しないとビルドエラーとなります。  
+  → ファイルへのパスを確認してデータファイルの修正を行って下さい。  
+
 ### 【注意】
 -  Latex のシステム上コマンドに数字は使用出来ませんので、代替えの英字を使用しています。  
 　例：**3d**Rotation → md**Thd**Rotation  
 　　　Timer**10** → mdTimer**Ten**  
+
 
 ## 必要とするアイコンのみを使用する方法
 
@@ -53,7 +59,7 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 　　\newcommand{**\mdBuild**}{\includegraphics[width=1em]{./material-icons/build.png}}
 - 表示方法は「利用手順」と同様です。
 - **\mdBuild** 部分は自由に指定可能です。
-- **width=1em** で大きさの指定が可能です。
+- **width=1em** で大きさを指定出来ます。
 
 
 ### リンク

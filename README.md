@@ -55,7 +55,7 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 （１）ダウンロードした ICON ファイルを下記の様に配置します。  
 　[ project ]   
 　　├── **material-icons**   
-  　　 　├── **"build.png**" // 名前は適時変更可  
+  　　 　├── **"build.png**" // 名前は適宜変更可  
   　 　　├── **"home.png**"  
 
 （２）ICON の定義：  

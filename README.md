@@ -33,6 +33,10 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 　指定の prefix は "**md**" です。  
 　　例： **\md**Home
 
+- Latex のシステム上、コマンドに数字の使用が出来ませんので代替えの**英字**を使用しています。  
+　例：**3d**Rotation → md**Thd**Rotation  
+　　　Timer**10** → mdTimer**Ten**  
+
 （５）サイズの指定  
 　　　デフォルトでは **"1em**" が 指定されていますが変更可能です。  
 　　　{**\fontsize{20pt}{14pt}\selectfont** \mdBuild}  
@@ -44,12 +48,7 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 
 ### エラー
 - MDI のアップデート等によりアイコンファイルの実体が存在しないとビルドエラーとなります。  
-  → ファイルへのパスを確認してデータファイルの修正を行って下さい。  
-
-### 【注意】
--  Latex のシステム上コマンドに数字は使用出来ませんので、代替えの**英字**を使用しています。  
-　例：**3d**Rotation → md**Thd**Rotation  
-　　　Timer**10** → mdTimer**Ten**  
+→ ファイルへのパスを確認してデータファイルの修正を行って下さい。  
 
 ## 必要とするアイコンのみを使用する方法
 

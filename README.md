@@ -5,13 +5,14 @@ Material Design Icons for Latex.
 
 ## == 準備中です== 
 
-- Latex で **Material Design Icons(MDI) 4.0.0** ( Google  ) を使用する為のライブラリーです。
-- **template.pdf** に一覧があります。
-- 著作権を考慮しアイコンの実体は同梱していませんので各自ダウンロードして下さい。
+- Latex で **[Material Design Icons(MDI) 4.0.0](https://github.com/google/material-design-icons/)**
+ ( Google  ) を使用する為のライブラリーです。
+- アイコン一覧(CheatSheet)は **sample-list.pdf** にあります。
+- **著作権**を考慮しアイコンの実体は同梱していませんので各自ダウンロードして下さい。
 
 ### 作成環境
 - LuaLatex  ( Debian：TexLive) 
-- Lualatex 及び BibLatex の導入方法、GEdit 及び VSCode による作業手順を Help.pdf（準備中）に解説しています。
+- LuaLatex 及び BibLatex の導入方法、GEdit 及び VSCode による作業手順を Help.pdf（準備中）に解説しています。
 
 ### 利用手順
 （１） [google /
@@ -25,35 +26,37 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 
 （３）アイコンデータファイルを読込ます。  
 　　　**\usepackage{import}**  // 使用パッケージ  
-　　　**\import{./}{material-icons-data.tex}**
+　　　**\import{./lib/}{material-icons-data.tex}**
 
 （４）アイコンの表示  
-　　　指定の prefix は "**md**" です。  
-　　　　例： **\md**Home
+   - 入力値は **sample-list.pdf** を参照して下さい。  
+　指定の prefix は "**md**" です。  
+　　例： **\md**Home
 
 （５）サイズの指定  
 　　　デフォルトでは **"1em**" が 指定されていますが変更可能です。  
-　　　{**\fontsize{20pt}{14pt}\selectfont** \mdBuild} 
+　　　{**\fontsize{20pt}{14pt}\selectfont** \mdBuild}  
+　　　※ **"14pt**" は行間値。   
 
 （６）ビルド  
-　　　Lualatex template.tex
+　　　lualatex template.tex  
+　　　※ LuaLatex は直接 **PDF** ファイルが作成されます。
 
 ### エラー
 - MDI のアップデート等によりアイコンファイルの実体が存在しないとビルドエラーとなります。  
   → ファイルへのパスを確認してデータファイルの修正を行って下さい。  
 
 ### 【注意】
--  Latex のシステム上コマンドに数字は使用出来ませんので、代替えの英字を使用しています。  
+-  Latex のシステム上コマンドに数字は使用出来ませんので、代替えの**英字**を使用しています。  
 　例：**3d**Rotation → md**Thd**Rotation  
 　　　Timer**10** → mdTimer**Ten**  
-
 
 ## 必要とするアイコンのみを使用する方法
 
 （１）ダウンロードした ICON ファイルを下記の様に配置します。  
 　[ project ]   
 　　├── **material-icons**   
-  　　 　├── **"build.png**"  
+  　　 　├── **"build.png**" // 名前は適時変更可  
   　 　　├── **"home.png**"  
 
 （２）ICON の定義：  
@@ -62,6 +65,6 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 - **\mdBuild** 部分は自由に指定可能です。
 - **width=1em** で大きさを指定出来ます。
 
-
-### リンク
+## CheatSheet として **sample-list.pdf** を独自に更新するには
+   - **sample-list.tex** を編集、ビルドして下さい。
 

@@ -23,19 +23,19 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
   　　 　　├── alert  
 
 （３）アイコンデータファイルを読込ます。  
-　　**\usepackage{import}**  // 使用パッケージ  
-　　**\import{./}{material-icons-data.tex}**
+　　　**\usepackage{import}**  // 使用パッケージ  
+　　　**\import{./}{material-icons-data.tex}**
 
 （４）アイコンの表示  
-　　指定の prefix は "**md**" です。  
-　　　例： **\md**Home
+　　　指定の prefix は "**md**" です。  
+　　　　例： **\md**Home
 
-（５）サイズの指定
-　デフォルトでは **"1em**" が 指定されていますが変更可能です。  
-　{**\fontsize{20pt}{14pt}\selectfont** \mdBuild} 
+（５）サイズの指定  
+　　　デフォルトでは **"1em**" が 指定されていますが変更可能です。  
+　　　{**\fontsize{20pt}{14pt}\selectfont** \mdBuild} 
 
-（６）ビルド
-　　Lualatex pproject.tex
+（６）ビルド  
+　　　Lualatex pproject.tex
 
 ### エラー
 - MDI のアップデート等によりアイコンファイルの実体が存在しないとビルドエラーとなります。  

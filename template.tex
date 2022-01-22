@@ -1,0 +1,42 @@
+\documentclass[a5j,10pt]{ltjarticle}
+
+% LINK
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{pdfborder={0 0 0.5}}
+
+% 色の使用
+\usepackage{xcolor}
+\definecolor{mylinkcolor}{RGB}{3, 112, 145} %{65, 145, 3} % 色定義
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,
+    linkcolor=red,
+    urlcolor=mylinkcolor, % 定義された色
+    % pdfborder={0 0 0.5}
+}
+
+% 画像挿入
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{svg} 
+
+% FONT
+\usepackage{fontspec}
+
+% MATERIAL-ICONS
+\usepackage{import}
+\import{./lib/}{material-icons-data.tex}
+
+% SAMPLE-ICON
+\newcommand{\mdSampleIcon}{\includegraphics[width=1em]{./material-icons/sample-icon.png}}
+
+\title{\mdSampleIcon \Huge Material Design Icons Template}
+\author{\href{https://github.com/ru-museum/}{ru\_museum} (GitHub)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\end{document}

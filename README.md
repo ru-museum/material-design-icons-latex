@@ -6,6 +6,7 @@ Material Design Icons for Latex.
 ## == 準備中です== 
 
 - Latex で **Material Design Icons(MDI) 4.0.0** ( Google  ) を使用する為のライブラリーです。
+- **template.pdf** に一覧があります。
 - 著作権を考慮しアイコンの実体は同梱していませんので各自ダウンロードして下さい。
 
 ### 作成環境
@@ -35,7 +36,7 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 　　　{**\fontsize{20pt}{14pt}\selectfont** \mdBuild} 
 
 （６）ビルド  
-　　　Lualatex pproject.tex
+　　　Lualatex template.tex
 
 ### エラー
 - MDI のアップデート等によりアイコンファイルの実体が存在しないとビルドエラーとなります。  

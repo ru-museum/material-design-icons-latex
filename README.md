@@ -14,7 +14,8 @@ Material Design Icons for Latex.
  [LuaLaTeX & BibLaTeX with Debian：環境構築と作業手順の解説](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf) に解説しています。
 
 ### 動作確認
-　**■ 先ず、simple-template.tex ファイルを使い動作確認を行って下さい。**
+　**■ 先ず、simple-template.tex ファイルを使い動作確認を行って下さい。**  
+　**■ これは gedit(GNOME) での設定例です。**
 
   1. simple-template.tex ファイルを編集し保存します。  
   2. 設定した「Alt + F5」でビルドしますと PDF ファイルその他の関連ファイルが生成されます。  

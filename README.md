@@ -5,7 +5,8 @@ Material Design Icons for Latex.
 
 - Latex で **[Material Design Icons(MDI) 4.0.0](https://github.com/google/material-design-icons/)**
  ( Google  ) を使用する為のライブラリーです。
-- アイコン一覧は [**sample-list.pdf**](https://github.com/ru-museum/material-design-icons-latex/blob/main/sample-list.pdf) にあります（CheatSheet）。
+- アイコン一覧は [**sample-list.pdf**](https://github.com/ru-museum/material-design-icons-latex/blob/main/sample-list.pdf) にあります（CheatSheet）。  
+PDF ファイルは画面右上の「Download」ボタンでダウンロードが出来ます。 
 - **著作権**を考慮しアイコンの実体は同梱していませんので各自ダウンロードして下さい。
 
 ### 作成環境

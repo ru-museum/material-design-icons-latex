@@ -19,7 +19,7 @@ Material Design Icons for Latex.
 
   1. simple-template.tex ファイルを編集し保存します。  
   2. 設定した「Alt + F5」でビルドしますと PDF ファイルその他の関連ファイルが生成されます。  
-  3. 「Shift + Alt + P」でPDF ファイルを開き確認します。  
+  3. 設定した「Shift + Alt + P」でPDF ファイルを開き確認します。  
   4. 再度編集保存し、ビルドしますと変更が反映されます。  
 - 詳細は [LuaLaTeX & BibLaTeX with Debian：環境構築と作業手順の解説](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf) をご覧下さい。
 

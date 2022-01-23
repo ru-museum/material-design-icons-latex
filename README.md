@@ -7,12 +7,22 @@ Material Design Icons for Latex.
 
 - Latex で **[Material Design Icons(MDI) 4.0.0](https://github.com/google/material-design-icons/)**
  ( Google  ) を使用する為のライブラリーです。
-- アイコン一覧(CheatSheet)は **sample-list.pdf** にあります。
+- アイコン一覧は [**sample-list.pdf**](https://github.com/ru-museum/material-design-icons-latex/blob/main/sample-list.pdf) にあります（CheatSheet）。
 - **著作権**を考慮しアイコンの実体は同梱していませんので各自ダウンロードして下さい。
 
 ### 作成環境
 - LuaLatex  ( Debian：TexLive) 
-- LuaLatex 及び BibLatex の導入方法、GEdit 及び VSCode による作業手順を Help.pdf（準備中）に解説しています。
+- LuaLatex 及び BibLatex の導入方法、GEdit 及び VSCode による作業手順を  
+ [LuaLaTeX & BibLaTeX with Debian：環境構築と作業手順の解説](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf) に解説しています。
+
+### 動作確認
+　**■ 先ず、simple-template.tex ファイルを使い動作確認を行って下さい。**
+
+  1. simple-template.tex ファイルを編集し保存します。  
+  2. 設定した「Alt + F5」でビルドしますと PDF ファイルその他の関連ファイルが生成されます。  
+  3. 「Shift + Alt + P」でPDF ファイルを開き確認します。  
+  4. 再度編集保存し、ビルドしますと変更が反映されます。  
+- 詳細は [LuaLaTeX & BibLaTeX with Debian：環境構築と作業手順の解説](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf) をご覧下さい。
 
 ### 利用手順
 （１） [google /

@@ -3,8 +3,6 @@ material-design-icons-latex
 
 Material Design Icons for Latex.
 
-## == 準備中です== 
-
 - Latex で **[Material Design Icons(MDI) 4.0.0](https://github.com/google/material-design-icons/)**
  ( Google  ) を使用する為のライブラリーです。
 - アイコン一覧は [**sample-list.pdf**](https://github.com/ru-museum/material-design-icons-latex/blob/main/sample-list.pdf) にあります（CheatSheet）。

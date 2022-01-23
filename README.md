@@ -11,7 +11,7 @@ PDF ファイルは画面右上の「Download」ボタンでダウンロード�
 
 ### 作成環境
 - LuaLatex  ( Debian：TexLive) 
-- LuaLatex 及び BibLatex の導入方法、GEdit 及び VSCode による作業手順を  
+- LuaLatex 及び BibLatex の導入方法、gedit 及び VSCode による作業手順を  
  [LuaLaTeX & BibLaTeX with Debian：環境構築と作業手順の解説](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf) に解説しています。
 
 ### 動作確認

@@ -124,9 +124,9 @@ How to Use
 \Import{./lib/}{material-icons-data.tex}
 
 4. Display icons  
-The specified prefix is ​​"**md**".  
+The specified prefix is "**md**".  
  
-    Example: \**md**Home
+    Example: \\**md**Home
 
 -    Please refer to **sample-list.pdf** for the input value.   
 -    Due to the Latex system, numbers cannot be used in commands, so alternative alphabetic characters are used.  

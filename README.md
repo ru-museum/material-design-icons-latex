@@ -77,3 +77,94 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 ## CheatSheet として **sample-list.pdf** を独自に更新するには
    - **sample-list.tex** を編集、ビルドして下さい。
 
+***
+### [English]
+
+material-design-icons-latex.
+=======================
+
+Material Design Icons for Latex.
+
+-  A library for using  [**Material Design Icons (MDI) 4.0.0**](https://github.com/google/material-design-icons/)(Google) with Latex.
+-  The **sample-list.pdf** (CheatSheet).is the  list of icons,  
+ You can download it by clicking the "Download" button at the top right of the screen.
+-  In consideration of copyright, the actual icons are not included, so please download them by yourself.
+
+How to Use
+========
+### Requirements
+
+-  LuaLatex (Debian: TexLive)
+-  How to install LuaLatex and BibLatex and how to work with gedit and VSCode:
+    See [LuaLaTeX & BibLaTeX with Debian](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf)(latex-with-debian.pdf).
+
+### Before Usage
+
+- First, check the operation using the **simple-template.tex**.  
+- This is a example with gedit (GNOME) .  
+    1. Edit and save the simple-template.tex file.  
+    2. When you build with  "Alt + F5", PDF and other related files will be generated.  
+    3. Open the PDF file with "Shift + Alt + P" and check it.  
+    4. Edit and save it again and build it to reflect the changes.
+
+    For details, see [LuaLaTeX & BibLaTeX with Debian](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf)(latex-with-debian.pdf).
+
+### Usage 
+
+1.  Download the file from [google/material-design-icons](https://github.com/google/material-design-icons/).
+2. Place the following [png] folders as shown below.  
+[Project]  
+　├── material-icons  
+   　　( Contents of [ png ])  
+　　　├── action  
+　　　├── alert  
+
+3. Read the icon data file.  
+\Usepackage{import} % used  package   
+\Import{./lib/}{material-icons-data.tex}
+
+4. Display icons  
+The specified prefix is ​​"**md**".  
+ 
+    Example: \**md**Home
+
+-    Please refer to **sample-list.pdf** for the input value.   
+-    Due to the Latex system, numbers cannot be used in commands, so alternative alphabetic characters are used.  
+    Example:  
+　　　　**3d**Rotation → md**Thd**Rotation  
+　　　　Timer**10** → mdTimer**Ten**
+
+5. Specifying the size  
+By default, "1em", but you can change it.   
+{\Fontsize{**20pt**}{14pt}\selectfont \mdBuild}
+* "**14pt**" is the line spacing value.
+
+6. Build  
+**lualatex template.tex**
+- LuaLatex creates a PDF file directly.
+
+### Error
+
+- If the icon file does not exist due to MDI update etc., a build error will occur.  
+    → Check the path to the file and correct the data file.
+
+### How to use only the icons you need
+
+1.  Place the downloaded ICON file as shown below.  
+[Project]  
+├── material-icons  
+├── "build.png" // Name can be changed as appropriate  
+├── "home.png"
+
+2. Definition of ICON:
+ 
+\newcommand{\\**mdBuild**}{\includegraphics[width=1em]{./material-icons/build.png}}
+
+- The display method is the same in **Usage**.
+- The \\**mdBuild** part can be specified freely.
+- You can specify the size with **width=1em**.
+
+### Update sample-list.pdf independently as CheatSheet
+Edit and build **sample-list.tex**.
+
+

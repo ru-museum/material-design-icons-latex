@@ -150,7 +150,7 @@ By default, "1em", but you can change it.
 
 ### How to use only the icons you need
 
-1.  Place the downloaded ICON file as shown below.  
+1.  Place the downloaded icon-files as shown below.  
 [Project]  
 　├── material-icons  
 　　├── "build.png" // Name can be changed as appropriate  

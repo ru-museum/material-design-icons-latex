@@ -152,9 +152,9 @@ By default, "1em", but you can change it.
 
 1.  Place the downloaded ICON file as shown below.  
 [Project]  
-├── material-icons  
-├── "build.png" // Name can be changed as appropriate  
-├── "home.png"
+　├── material-icons  
+　　├── "build.png" // Name can be changed as appropriate  
+　　├── "home.png"
 
 2. Definition of ICON:
  

@@ -88,15 +88,15 @@ Material Design Icons for Latex.
 -  A library for using  [**Material Design Icons (MDI) 4.0.0**](https://github.com/google/material-design-icons/)(Google) with Latex.
 -  The **sample-list.pdf** (CheatSheet).is the  list of icons,  
  You can download it by clicking the "Download" button at the top right of the screen.
--  In consideration of copyright, the actual icons are not included, so please download them by yourself.
+-  **In consideration of copyright, the actual icons are not included, so please download them by yourself**.
 
 How to Use
 ========
 ### Requirements
 
 -  LuaLatex (Debian: TexLive)
--  How to install LuaLatex and BibLatex and how to work with gedit and VSCode:
-    See [LuaLaTeX & BibLaTeX with Debian](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf)(latex-with-debian.pdf).
+-  How to install LuaLatex and BibLatex and how to work with gedit and VSCode:  
+  See [LuaLaTeX & BibLaTeX with Debian](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf)(latex-with-debian.pdf).
 
 ### Before Usage
 

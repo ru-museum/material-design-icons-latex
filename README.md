@@ -50,7 +50,11 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 （５）サイズの指定  
 　　　デフォルトでは **"1em**" が 指定されていますが変更可能です。  
 　　　{**\fontsize{20pt}{14pt}\selectfont** \mdBuild}  
-　　　※ **"14pt**" は行間値。   
+　　　※ **"14pt**" は行間値。 
+   
+- FONT-SIZE の定義も可能です。  
+**\def\fs#1{\fontsize{#1}{#1}\selectfont }**  
+**\fs{30pt}**{\mdSampleIcon}   
 
 （６）ビルド  
 　　　lualatex template.tex  
@@ -138,6 +142,10 @@ The specified prefix is "**md**".
 By default, "1em", but you can change it.   
 {\Fontsize{**20pt**}{14pt}\selectfont \mdBuild}
 * "**14pt**" is the line spacing value.
+
+- You can also below:  
+**\def\fs#1{\fontsize{#1}{#1}\selectfont }**  
+**\fs{30pt}**{\mdSampleIcon}   
 
 6. Build  
 **lualatex template.tex**

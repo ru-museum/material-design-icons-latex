@@ -28,36 +28,45 @@ PDF ファイルは画面右上の「Download」ボタンでダウンロード�
 （１） [google /
 material-design-icons](https://github.com/google/material-design-icons/) よりファイルをダウンロードします。  
 （２） [ png ] フォルダ以下を下記の様に配置します。  
-　　[ project ]   
-　　　├── **material-icons**  
+```
+[ project ]   
+　　　├── material-icons  
 　  　　　（ [ png ]  の中身 ）  
   　 　　　├── action  
   　　 　　├── alert  
-
+```
 （３）アイコンデータファイルを読込ます。  
-　　　**\usepackage{import}**  // 使用パッケージ  
-　　　**\import{./lib/}{material-icons-data.tex}**
-
+```
+\usepackage{import}  // 使用パッケージ  
+\import{./lib/}{material-icons-data.tex}
+```
 （４）アイコンの表示  
    - 入力値は **sample-list.pdf** を参照して下さい。  
 　指定の prefix は "**md**" です。  
-　　例： **\md**Home
-
+```
+\mdHome
+```
 - Latex のシステム上、コマンドに数字の使用が出来ませんので代替えの**英字**を使用しています。  
-　例：**3d**Rotation → md**Thd**Rotation  
-　　　Timer**10** → mdTimer**Ten**  
-
+```
+3dRotation → mdThdRotation  
+Timer10 → mdTimerTen  
+```
 （５）サイズの指定  
 　　　デフォルトでは **"1em**" が 指定されていますが変更可能です。  
-　　　{**\fontsize{20pt}{14pt}\selectfont** \mdBuild}  
+```
+　　　{\fontsize{20pt}{14pt}\selectfont \mdBuild}  
+```
 　　　※ **"14pt**" は行間値。 
    
 - FONT-SIZE の定義も可能です。  
-**\def\fs#1{\fontsize{#1}{#1}\selectfont }**  
-**\fs{30pt}**{\mdSampleIcon}   
-
+```
+\def\fs#1{\fontsize{#1}{#1}\selectfont }  
+\fs{30pt}{\mdSampleIcon}   
+```
 （６）ビルド  
+```
 　　　lualatex template.tex  
+```
 　　　※ LuaLatex は直接 **PDF** ファイルが作成されます。
 
 ### エラー
@@ -67,13 +76,16 @@ material-design-icons](https://github.com/google/material-design-icons/) より�
 ## 必要とするアイコンのみを使用する方法
 
 （１）ダウンロードした ICON ファイルを下記の様に配置します。  
+```
 　[ project ]   
-　　├── **material-icons**   
-  　　 　├── **"build.png**" // 名前は適宜変更可  
-  　 　　├── **"home.png**"  
-
+　　├── material-icons   
+  　　 　├── build.png // 名前は適宜変更可  
+  　 　　├── home.png  
+```
 （２）ICON の定義：  
-　　\newcommand{**\mdBuild**}{\includegraphics[width=1em]{./material-icons/build.png}}
+```
+　　\newcommand{\mdBuild}{\includegraphics[width=1em]{./material-icons/build.png}}
+```
 - 表示方法は「利用手順」と同様です。
 - **\mdBuild** 部分は自由に指定可能です。
 - **width=1em** で大きさを指定出来ます。
@@ -117,38 +129,45 @@ How to Use
 
 1.  Download the file from [google/material-design-icons](https://github.com/google/material-design-icons/).
 2. Place the following [png] folders as shown below.  
+```
 [Project]  
 　├── material-icons  
    　　( Contents of [ png ])  
 　　　├── action  
 　　　├── alert  
-
+```
 3. Read the icon data file.  
+```
 \Usepackage{import} % used  package   
 \Import{./lib/}{material-icons-data.tex}
-
+```
 4. Display icons  
 The specified prefix is "**md**".  
- 
-    Example: \\**md**Home
-
+```
+\mdHome
+```
 -    Please refer to **sample-list.pdf** for the input value.   
 -    Due to the Latex system, numbers cannot be used in commands, so alternative alphabetic characters are used.  
-    Example:  
-　　　　**3d**Rotation → md**Thd**Rotation  
-　　　　Timer**10** → mdTimer**Ten**
-
+```
+3dRotation → mdThdRotation  
+Timer10 → mdTimerTen
+```
 5. Specifying the size  
 By default, "1em", but you can change it.   
-{\Fontsize{**20pt**}{14pt}\selectfont \mdBuild}
+```
+{\Fontsize{20pt}{14pt}\selectfont \mdBuild}
+```
 * "**14pt**" is the line spacing value.
 
 - You can also below:  
-**\def\fs#1{\fontsize{#1}{#1}\selectfont }**  
-**\fs{30pt}**{\mdSampleIcon}   
-
+```
+\def\fs#1{\fontsize{#1}{#1}\selectfont }  
+\fs{30pt}{\mdSampleIcon}   
+```
 6. Build  
-**lualatex template.tex**
+```
+lualatex template.tex
+```
 - LuaLatex creates a PDF file directly.
 
 ### Error
@@ -159,15 +178,16 @@ By default, "1em", but you can change it.
 ### How to use only the icons you need
 
 1.  Place the downloaded icon-files as shown below.  
+```
 [Project]  
 　├── material-icons  
-　　├── "build.png" // Name can be changed as appropriate  
-　　├── "home.png"
-
+　　├── build.png // Name can be changed as appropriate  
+　　├── home.png
+```
 2. Definition of ICON:
- 
-\newcommand{\\**mdBuild**}{\includegraphics[width=1em]{./material-icons/build.png}}
-
+```
+\newcommand{\mdBuild}{\includegraphics[width=1em]{./material-icons/build.png}}
+```
 - The display method is the same in **Usage**.
 - The \\**mdBuild** part can be specified freely.
 - You can specify the size with **width=1em**.

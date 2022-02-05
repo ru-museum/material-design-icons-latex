@@ -9,6 +9,11 @@ Material Design Icons for Latex.
 PDF ファイルは画面右上の「Download」ボタンでダウンロードが出来ます。 
 - **著作権**を考慮しアイコンの実体は同梱していませんので各自ダウンロードして下さい。
 
+### 【推奨】SVG アイコンを使用する方法
+- 詳細を公開しましたのでご覧下さい。  
+ [Material Design Icons Template for LaTeX(SVG版)](https://github.com/ru-museum/material-design-icons-latex/blob/main/material-icons-svg-template.pdf)
+
+
 ### 作成環境
 - LuaLatex  ( Debian：TexLive) 
 - LuaLatex 及び BibLatex の導入方法、gedit 及び VSCode による作業手順を  

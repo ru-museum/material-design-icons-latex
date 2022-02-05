@@ -1,0 +1,118 @@
+\documentclass[10pt]{ltjarticle}
+\usepackage{fontspec}
+
+% LINK
+\usepackage{url}
+\usepackage{hyperref}
+
+% 色の使用
+\usepackage{xcolor}
+\definecolor{code}{HTML}{800000}
+\definecolor{mylinkcolor}{RGB}{3, 112, 145} %{65, 145, 3} % 色定義
+\hypersetup{
+    colorlinks=true,
+    urlcolor=mylinkcolor, % 定義された色
+}
+
+% 表の使用
+\usepackage{float}
+
+% MATERIAL-ICONS
+\usepackage{materiaicons} 
+\usepackage{svg} 
+
+% FONT-SIZE 定義
+\def\fs#1{\fontsize{#1pt}{14pt}\selectfont}
+% {\fs{24.88} 
+
+\title{{\fs{24.88}Material Design Icons\\ Template for \LaTeX{}}\\ \vspace{10mm}{\fs{12} \textbf{[ SVG 版 ]}}}
+\author{}
+\date{\today}
+
+% PNG サンプル定義
+\newcommand{\mdBuildPng}{\includegraphics[width=1em]{./material-icons/build.png}}
+
+\begin{document}
+
+\maketitle
+
+\section{material-design-icons (Google)}
+
+\subsection{表示例}
+
+\begin{table}[H]
+\centering
+% \caption{アイコン表示例}
+\begin{tabular}{ll}
+{\fs{20} \mdBuild} \hspace{0.6em} mdBuild & {\fs{20} \mdAddComment} \hspace{0.6em} mdAddComment\\
+{\fs{20} \mdAccessibility} \hspace{0.6em} mdAccessibility & {\fs{20} \mdPDIcon} \hspace{0.6em} mdPDIcon\\
+\end{tabular}
+\end{table}
+
+\subsection{SVG と PNG との表示比較}
+
+\begin{itemize}
+  \item PNG は拡大すると輪郭が不鮮明に表示されます。
+\end{itemize}
+
+\begin{table}[H]
+\centering
+% \caption{SVG と PNG との表示比較}
+\begin{tabular}{lll}
+フォントサイズ & SVG & PNG\\ 
+\hline
+\vspace{-2mm} & \\
+{\fs{20}20pt} & {\fs{20} \mdBuild} & {\fs{20} \mdBuildPng}\\
+{\fs{40}40pt} & {\fs{40} \mdBuild} & {\fs{40} \mdBuildPng}\\
+{\fs{60}60pt} & {\fs{60} \mdBuild} & {\fs{60} \mdBuildPng}\\
+\end{tabular}
+\end{table}
+
+
+\newpage
+
+\section{使用方法}
+
+\begin{itemize}
+  \item 一括ダウンロードで利用する場合は SVG ファイル(src 内)は全て同名(24px.svg)となっている為、ファイル名を変更する必要があります。
+\end{itemize}
+
+\subsection{ICON ファイル（.svg）のダウンロード。}
+\href{https://fonts.google.com/icons}{Material Design Icons}からアイコンをクリックし SVG ファイルを所定のフォルダに保存します。
+
+\subsection{ファイル名はを簡便なものに変更して置きます。}
+\hspace{8mm}例： thumb\_up\_black\_24dp.svg → thumb\_up.svg　
+
+\subsection{パッケージファイルの編集。}
+\textbf{materialicons.sty}\\  
+{\fs{8}
+\hspace{4mm}\% フォントサイズ：変更可能\vspace{1mm}\\
+\hspace{4mm}\textbackslash def\textbackslash @icon\{\textbackslash includesvg[width=\textbf{1em}]\}\vspace{2mm}\\
+\hspace{4mm}\% アイコンファイル（.svg）フォルダ：変更可能\vspace{1mm}\\
+\hspace{4mm}\textbackslash def\textbackslash @dir\{\textbf{./material-icons}\}\vspace{2mm}\\
+\hspace{4mm}\% 以下にファイル名に従い追加します\vspace{1mm}\\
+\hspace{4mm}\textbackslash newcommand\{\textcolor{code}{\textbf{\textbackslash mdBuild}}\}\{\textbackslash@icon\{\textbackslash@dir/\textcolor{code}{\textbf{build}}.svg\}\}\\
+\hspace{4mm}\textbackslash newcommand\{\textcolor{code}{\textbf{\textbackslash mdAccessibility}}\}\{\textbackslash@icon\{\textbackslash@dir/\textcolor{code}{\textbf{accessibility}}.svg\}\}
+}
+
+\subsection{TEX 内での表示。}
+\% パッケージの読込\\
+\hspace{4mm}\textbackslash usepackage\{materiaicons\}\\
+\hspace{4mm}\textbackslash usepackage\{svg\} \% 必須\\
+
+\% フォントサイズのマクロを定義（）\\
+\hspace{4mm}\textbackslash def\textbackslash fs\#1\{\textbackslash fontsize\{\#1pt\}\{14pt\}\textbackslash selectfont\}
+  
+\begin{table}[H]
+\centering
+% \caption{アイコンの表示}
+\begin{tabular}{ll}
+デフォルト & サイズ指定\\
+\hline
+\textbackslash mdBuild & \{\textbackslash fs\{20\} \textbackslash mdBuild\}\\
+\mdBuild & {\fs{20} \mdBuild}\\
+\end{tabular}
+\end{table}
+ 
+
+\end{document}

@@ -17,7 +17,7 @@ PDF ファイルは画面右上の「Download」ボタンでダウンロード�
 ### 作成環境
 - LuaLatex  ( Debian：TexLive) 
 - LuaLatex 及び BibLatex の導入方法、gedit 及び VSCode による作業手順を  
- [LuaLaTeX & BibLaTeX with Debian：環境構築と作業手順の解説](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf) に解説しています。
+ [LuaLaTeX with Debian：環境構築と作業手順](https://github.com/ru-museum/material-design-icons-latex/blob/main/lualatex-with-debian.pdf) に解説しています。
 
 ### 動作確認
 　**■ 先ず、simple-template.tex ファイルを使い動作確認を行って下さい。**  
@@ -27,7 +27,7 @@ PDF ファイルは画面右上の「Download」ボタンでダウンロード�
   2. 設定した「Alt + F5」でビルドしますと PDF ファイルその他の関連ファイルが生成されます。  
   3. 設定した「Shift + Alt + P」でPDF ファイルを開き確認します。  
   4. 再度編集保存し、ビルドしますと変更が反映されます。  
-- 詳細は [LuaLaTeX & BibLaTeX with Debian：環境構築と作業手順の解説](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf) をご覧下さい。
+- 詳細は [LuaLaTeX with Debian：環境構築と作業手順](https://github.com/ru-museum/material-design-icons-latex/blob/main/lualatex-with-debian.pdf) をご覧下さい。
 
 ### 利用手順
 （１） [google /
@@ -117,7 +117,7 @@ How to Use
 
 -  LuaLatex (Debian: TexLive)
 -  How to install LuaLatex and BibLatex and how to work with gedit and VSCode:  
-  See [LuaLaTeX & BibLaTeX with Debian](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf)(latex-with-debian.pdf).
+  See [LuaLaTeX with Debian](https://github.com/ru-museum/material-design-icons-latex/blob/main/lualatex-with-debian.pdf)(lualatex-with-debian.pdf).
 
 ### Before Usage
 
@@ -128,7 +128,7 @@ How to Use
     3. Open the PDF file with "Shift + Alt + P" and check it.  
     4. Edit and save it again and build it to reflect the changes.
 
-    For details, see [LuaLaTeX & BibLaTeX with Debian](https://github.com/ru-museum/material-design-icons-latex/blob/main/latex-with-debian.pdf)(latex-with-debian.pdf).
+    For details, see [LuaLaTeX with Debian](https://github.com/ru-museum/material-design-icons-latex/blob/main/lualatex-with-debian.pdf)(lualatex-with-debian.pdf).
 
 ### Usage 
 
